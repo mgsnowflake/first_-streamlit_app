@@ -38,6 +38,6 @@ my_cur = my_cnx.cursor()
 my_cur.execute("SELECT CURRENT_USER(), CURRENT_ACCOUNT(), CURRENT_REGION()")
 my_data_row = my_cur.fetchone()
 
-streamlist.header("The fruit load list contains:")
+streamlit.header("The fruit load list contains:")
 streamlit.dataframe(my_data_row)
 
